@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Terminal Leave Calculator</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Terminal Leave Calculator</h1>
+            <form id="leave-form">
+                <label for="end-date">Select Retirement Date:</label>
+                <input type="date" id="end-date" required><br><br>
+                <label for="leave-days">Current Leave Balance:</label>
+                <input type="number" id="leave-days" required><br><br>
+                <label for="additional-days">Service (Commander) Days:</label>
+                <input type="number" id="additional-days"><br><br>
+                <label for="earned-days">Earned Days (2.5 days/month):</label>
+                <input type="number" id="earned-days" readonly><br><br>
+                <button type="submit" id="calculate-button">Calculate</button>
+            </form>
+        </div>
+        <div id="results-container" class="container">
+            <h2>Results</h2>
+            <p id="result"></p>
+        </div>
+
+        <footer>
+            © 2024 TRTL Tech Solutions. All rights reserved.
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
